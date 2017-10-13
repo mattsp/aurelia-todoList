@@ -1,0 +1,9 @@
+<template>
+  <ul class="todo-filter-list">
+    <template repeat.for="filter of filters" >
+      <todo-filter on-click.call="onFilterSelected(id)" 
+                  selected.bind="filter.name === currentFilter.name ? true : false" 
+                  id.one-time="filter.id" name.one-time="filter.name"></todo-filter>
+    </template>
+  </ul>
+</template>

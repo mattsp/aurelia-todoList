@@ -1,0 +1,5 @@
+<template>
+<li class="todo-filter">
+  <a href="#/all" click.delegate="onClickActiveFilter()" class.bind="selected === true ? 'todo-filter__link todo-filter__link--selected' : 'todo-filter__link'">  ${name | capitalize}</a>
+</li>
+</template>

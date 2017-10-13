@@ -1,0 +1,27 @@
+
+
+$todo-input-new-color-bg:  $black-dark-ligth;
+$todo-input-new-color-bs:  $black-dark;
+
+.todo-input {
+  @include e('new') {
+    padding: rem(16) rem(16) rem(16) rem(60);
+    border: none;
+    background: $todo-input-new-color-bg;
+    box-shadow: inset 0 -2px 1px $todo-input-new-color-bs;
+    position: relative; 
+    margin: 0;
+    width: 100%;
+    font-size: rem(24);
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: 1.4em;
+    outline: none;
+    box-sizing: border-box;
+    &::placeholder{
+      font-style: italic;
+      font-weight: 300;
+      color: #e6e6e6;
+    }
+  }
+}

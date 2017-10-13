@@ -15,12 +15,19 @@
     "@nestjs/microservices": "^4.0.0",
     "@nestjs/testing": "^4.0.0",
     "@nestjs/websockets": "^4.0.0",
+    "aurelia-todolist-models": "git+https://github.com/mattsp/aurelia-todoList-models.git",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "mongoose": "^4.11.13",
     "redis": "^2.7.1",
     "reflect-metadata": "^0.1.10",
     "rxjs": "^5.4.0",
     "typescript": "^2.5.2"
   },
   "devDependencies": {
+    "@types/mongodb": "^2.2.8",
+    "@types/mongoose": "^4.7.19",
     "@types/node": "^8.0.28",
     "nodemon": "^1.12.1",
     "ts-node": "^3.3.0"

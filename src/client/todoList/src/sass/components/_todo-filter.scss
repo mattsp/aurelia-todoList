@@ -1,0 +1,14 @@
+.todo-filter{
+  display: inline;
+  @include e('link') {
+    color: inherit;
+    margin: rem(3);
+    padding: rem(3) rem(7);
+    text-decoration: none;
+    border: rem(1) solid transparent;
+    border-radius: rem(3);
+    @include m('selected') {
+      border-color: rgba(175, 47, 47, 0.2);
+    }
+  }
+}

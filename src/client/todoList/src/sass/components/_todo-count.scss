@@ -1,0 +1,7 @@
+.todo-count {
+  float: left;
+  text-align: left;
+  @include e('value') {
+    font-weight: 300;
+  }
+}

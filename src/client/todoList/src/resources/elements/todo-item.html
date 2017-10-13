@@ -1,0 +1,10 @@
+<template>
+  <li class.bind="completed === true ? 'todo-item todo-item--completed' : 'todo-item'" ref="todoItem" dblclick.delegate="onDoubleClickItem()" >
+    <div class="todo-item__container" ref="todoItemContainer">
+      <input class="todo-item__toggle" type="checkbox" checked.bind="completed">
+      <label class.bind="completed === true ? 'todo-item__label todo-item__label--completed' : 'todo-item__label'" ref="label" textcontent.bind="title & debounce">${title}</label>
+      <button class="todo-item__destroy" click.delegate="destroy()"></button>
+    </div>
+    <input type="text" class="todo-item todo-item__input" ref="todoEditInput" on-enter.call="edit()"  blur.trigger="edit()" value.bind="title">
+  </li>
+</template>

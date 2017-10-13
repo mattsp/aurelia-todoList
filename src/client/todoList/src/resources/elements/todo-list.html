@@ -1,0 +1,9 @@
+<template>
+  <ul class="todo-list">
+    <todo-item repeat.for="todo of todos" id.one-time="todo.id" title.bind="todo.title" 
+              completed.bind="todo.completed" 
+              on-completed.call="onCompleted(todo)" 
+              on-removed.call="onRemoved(todo)" 
+              on-edited.call="onEdited(todo)" ></todo-item>
+  </ul>
+</template>

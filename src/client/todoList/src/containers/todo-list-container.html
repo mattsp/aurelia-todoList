@@ -1,0 +1,4 @@
+<template>
+    <todo-toggle></todo-toggle>
+    <todo-list todos.bind="todos" on-delete.call="onTodoDelete(todo)" on-edit.call="onTodoEdit(todo)" on-toggle.call="onTodoToggle(todo)"></todo-list>
+</template>

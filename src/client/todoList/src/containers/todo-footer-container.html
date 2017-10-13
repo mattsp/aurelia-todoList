@@ -1,0 +1,5 @@
+<template>
+  <todo-count value.bind="todosCounter" items-name.one-time="todosItemName" items-position.one-time="todosItemPosition"></todo-count>
+  <todo-filter-list on-filter-change.call="onFilterChange(id)" filters.bind="filters" current-filter.bind="currentFilter"></todo-filter-list>
+  <todo-clear-completed show.bind="displayClearCompletedTodos" on-clear.call="onClearCompleted()">Clear completed</todo-clear-completed>
+</template>

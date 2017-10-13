@@ -1,0 +1,28 @@
+.todo-toggle {
+  @include e('checkbox') {
+    position: absolute;
+    top: rem(-55);
+    left: rem(-12);
+    width: rem(60);
+    height: rem(34);
+    text-align: center;
+    border: none;
+    &:before {
+      content: '❯';
+      font-size: 22px;
+      color: #e6e6e6;
+      padding: 10px 27px 10px 27px;
+    }
+    &:checked:before {
+      color: #737373;
+    }
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .todo-toggle {
+    @include e('checkbox') {
+      transform: rotate(90deg);
+      -webkit-appearance: none;
+    }
+  }
+}
